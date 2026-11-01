@@ -1,0 +1,115 @@
+.energy-hero {
+  padding: var(--space-5xl) 0 var(--space-3xl);
+  text-align: center;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(34, 197, 94, 0.08), transparent);
+}
+
+.energy-hero .eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #22c55e;
+  margin-bottom: 8px;
+}
+
+.energy-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 12px;
+}
+
+.energy-hero .hero-desc {
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+}
+
+.energy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.energy-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  transition: border-color 0.25s;
+}
+
+.energy-card:hover {
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+.energy-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.energy-card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.energy-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.energy-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.energy-card li {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+}
+
+.energy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #22c55e;
+}
+
+.energy-cta-box {
+  text-align: center;
+  padding: var(--space-4xl);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(34, 197, 94, 0.02));
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: var(--radius-2xl);
+}
+
+.energy-cta-box h2 {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.energy-cta-box p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 700px) {
+  .energy-grid {
+    grid-template-columns: 1fr;
+  }
+}
